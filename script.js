@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     video.play(); // Autoplay video
     console.log("Video play attempted"); // Log to ensure this code is running
     overlayMessage.style.display = "block"; // Show the overlay message on video
-  }, 10000);
+  }, 6000);
 
   // Handle video play error
   video.addEventListener("error", () => {
