@@ -1,0 +1,79 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f1e3;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.button-container {
+    margin-top: 20px;
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    /* Transition properties */
+    position: absolute;
+    /* Absolute positioning for movement */
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+#lockedMessage {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-top: 20px;
+    display: none;
+}
+
+.video-wrapper {
+    position: relative;
+    display: none;
+    /* Hidden initially */
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    display: none;
+    /* Hidden initially */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
